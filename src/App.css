@@ -1,0 +1,89 @@
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+.navbar-dark {
+  background-color: #A90201;
+}
+.NavLink {
+  color: white;
+}
+
+.main_content{
+  margin: 20px 0px 20px 0px;
+}
+.navigationSpace{
+  margin-left: 20px;
+}
+a{
+  color: #986633;
+}
+.profileform{
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.timezone-picker{
+  width:  100%;
+  font-size:  1rem;
+  color: #495057;
+  background-color:  #fff;
+  background-clip:  padding-box;
+  border:  0.5px solid #ced4da;;
+  border-radius:  .25rem;
+}
+
+.taskbox {
+  padding: 5px;
+  margin-bottom: 39px;
+  border: 1px dashed #999999;
+  float: left;
+  font-size: 12px;
+  background: none repeat scroll 0pt 0pt #fafaea;
+}
+
+.tasknum {
+  color: #FFFFFF;
+  background-color: #B73204;
+}
+
+table.general {
+  border: 1px solid #999999;
+  border-collapse: collapse;
+}
+
+table.general th {
+  background-color: #cccccc;
+  border: 1px solid #999999;
+  padding: 3px;
+}
+
+table.general td {
+  border: 1px solid #999999;
+  padding: 3px;
+}
+.topictable {
+  float: left; margin-left: 0; font-size: 11px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd){
+  background-color: #eeeeee !important;
+}
+
+.taskheader {
+  font-family: verdana; font-size: 13px; text-align:left;
+}
+.table_warning{
+  background-color:#fcf8e3;
+}
+.table_info{
+  background-color:#d9edf7;
+}
