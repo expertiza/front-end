@@ -1,0 +1,32 @@
+sudo: required
+
+language: node_js
+
+services:
+  - docker
+
+node_js:
+  - "8"
+
+cache:
+  directories:
+    - "node_modules"
+
+before_install:
+  # Make sure everything's up to date.
+  - sudo apt-get update -qq
+
+install:
+  # Install Ansible.
+  - sudo pip install ansible
+
+script:
+    - npm install
+    - npm test
+    - npm run build
+
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
