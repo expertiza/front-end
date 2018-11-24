@@ -2,7 +2,7 @@
   become: True
   docker_container:
     name: stable
-    image: "{{ docker_repo }}:latest"
+    image: "{{ docker_repo }}:stable"
     ports:
       - 5000:3000
     state: started
