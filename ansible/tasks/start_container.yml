@@ -1,8 +1,8 @@
 - name: "Start the container for Production"
   become: True
   docker_container:
-    name: latest
-    image: "{{ docker_repo }}:latest"
+    name: stable
+    image: "{{ docker_repo }}:stable"
     ports:
       - 5000:3000
     state: started

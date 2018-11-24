@@ -1,7 +1,7 @@
 - name: "Stop the container for Production"
   become: True
   docker_container:
-    name: latest
+    name: stable
     state: stopped
   when: deploy_env == "stable"
   ignore_errors: True
