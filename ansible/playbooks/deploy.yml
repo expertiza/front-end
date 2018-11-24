@@ -1,9 +1,9 @@
 ---
 - hosts: dev
   vars:
-    docker_repo: "erchiragjain92/node-test-app"
+    docker_repo: "erchiragjain92/front-end"
   tasks:
-    - include: ../tasks/open_ports.yml # Uncomment only for VCL
+    # - include: ../tasks/open_ports.yml # Uncomment only for VCL
     - include: ../tasks/setup_python.yml
     - include: ../tasks/stop_container.yml
     - include: ../tasks/docker_pull.yml
