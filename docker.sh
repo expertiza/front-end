@@ -1,7 +1,10 @@
 # login DockerHub
+printf "Logging into Dockerhub"
+
 echo "$REGISTRY_PASS" | docker login --username "$REGISTRY_USER" --password-stdin
 
 # build the docker image and push to DockerHub repository
-docker build --tag "$IMAGE_NAME" .
-docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
-docker push "${IMAGE_NAME}:latest"
+printf "Building docker image for ${DEPLOY_ENV}\n\n"
+
+docker build --force-rm --tag "${IMAGE_NAME}:${DEPLOY_ENV}" .
+docker push "${IMAGE_NAME}:${DEPLOY_ENV}"
