@@ -22,3 +22,5 @@ yarn-error.log*
 
 # Ansible
 *.retry
+vault*
+local_setup.sh
