@@ -25,7 +25,7 @@ install:
 script:
     - npm install
     # - npm test # Uncomment when testsuite is ready
-    - npm run build
+    # - npm run build # Uncomment after npm build fix is merged
 
 deploy:
   - provider: script
