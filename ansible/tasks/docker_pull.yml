@@ -1,0 +1,15 @@
+- name: "Pull docker image for Production"
+  become: True
+  docker_image:
+    name: "{{ docker_repo }}"
+    tag: stable
+    force: true
+  when: deploy_env == "stable"
+
+- name: "Pull docker image for Beta"
+  become: True
+  docker_image:
+    name: "{{ docker_repo }}"
+    tag: beta
+    force: true
+  when: deploy_env == "beta"
