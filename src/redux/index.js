@@ -38,9 +38,9 @@ export {
     FETCH_REVIEW_DATA_FAILURE,
     SET_ALERT_AFTER_INV_SENT,
     ADVERTISE_CONTENT_SUCCESS,
+    ADD_SCORE,
     UPDATE_COMMENT_SUCCESS,
-    UPDATE_COMMENT_FAILURE,
-    ADD_SCORE
+    UPDATE_COMMENT_FAILURE
 } from './ActionTypes';
 
 export {
@@ -120,15 +120,14 @@ export { fetchStudentsTeamView,
     acceptInvitationToAssignment,
     declineInvitationToAssignment,
     getAdContent,
-    comments_for_advertisement,
     updateCommentForAdvertisement,
     updateCommentSuccess,
     updateCommentFailure,
-    AdContentSuccess
+    AdContentSuccess,
+    retractInvitation
 }
 from './actions/StudentTeamView';
 export  { fetchReviewData,
     fetchReviewDataSuccess,
     fetchReviewDataFailure,
-    retractInvitation
 } from './actions/Response'
