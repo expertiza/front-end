@@ -16,7 +16,7 @@ class invitationComponent extends Component {
         } else {
             output = <td align = "center">Waiting for reply
                         &nbsp;&nbsp;
-                        <NavLink  to="#" onClick={() => this.props.retractInvitation(this.props.inv.id, this.props.student.id)}>Retract</NavLink> 
+                        {/* <NavLink  to="#" onClick={() => this.props.retractInvitation(this.props.inv.id, this.props.student.id)}>Retract</NavLink>  */}
                     </td> 
         }
 
@@ -36,7 +36,7 @@ class invitationComponent extends Component {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        retractInvitation : ( inv_id, student_id) => dispatch(actions.retractInvitation(inv_id, student_id))
+        // retractInvitation : ( inv_id, student_id) => dispatch(actions.retractInvitation(inv_id, student_id))
     }
 }
 export default connect(null, mapDispatchToProps)(invitationComponent);
