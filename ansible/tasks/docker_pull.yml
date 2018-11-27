@@ -13,3 +13,7 @@
     tag: beta
     force: true
   when: deploy_env == "beta"
+
+- name: Remove unused images
+  become: True
+  shell: docker rmi $(docker images -f "dangling=true" -q)
