@@ -17,3 +17,4 @@
 - name: Remove unused images
   become: True
   shell: docker rmi $(docker images -f "dangling=true" -q)
+  ignore_errors: True
