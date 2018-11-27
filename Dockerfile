@@ -1,7 +1,7 @@
 ###############################################################################
 # Step 1 : Builder image
 
-FROM node:11 as builder
+FROM node:10 as builder
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 COPY . .
@@ -12,7 +12,7 @@ RUN npm run build
 ###############################################################################
 # Step 2 : Production environment Run image
 
-FROM node:11-alpine
+FROM node:10-alpine
 ENV NODE_ENV=production
 WORKDIR /home/node/app
 
