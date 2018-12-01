@@ -28,4 +28,4 @@ RUN npm install -g serve
 COPY --from=builder /usr/src/app/build ./build
 
 # Start the app
-CMD serve -s ./build
+CMD serve -l 3000 -s ./build
