@@ -1,6 +1,6 @@
 - name: Install python-pip
   become: True
-  apt:
+  yum:
      name: python-pip
 
 - name: Install python dependency
