@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: prod
   vars:
     docker_repo: "erchiragjain92/front-end"
   tasks:

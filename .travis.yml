@@ -1,12 +1,13 @@
+dist: trusty
 sudo: required
 
 language: node_js
 
+node_js:
+  - "10"
+
 services:
   - docker
-
-node_js:
-  - "8"
 
 cache:
   directories:
@@ -25,7 +26,7 @@ install:
 script:
     - npm install
     # - npm test # Uncomment when testsuite is ready
-    # - npm run build # Uncomment after npm build fix is merged
+    - npm run build
 
 deploy:
   - provider: script
