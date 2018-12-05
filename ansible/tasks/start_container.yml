@@ -1,0 +1,21 @@
+- name: "Start the container for Production"
+  become: True
+  docker_container:
+    name: stable
+    image: "{{ docker_repo }}:stable"
+    ports:
+      - 5000:3000
+    state: started
+  when: deploy_env == "stable"
+  ignore_errors: True
+
+- name: "Start the container for Beta"
+  become: True
+  docker_container:
+    name: beta
+    image: "{{ docker_repo }}:beta"
+    ports:
+      - 5001:3000
+    state: started
+  when: deploy_env == "beta"
+  ignore_errors: True

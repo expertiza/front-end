@@ -1,0 +1,9 @@
+- name: Install python-pip
+  become: True
+  yum:
+     name: python-pip
+
+- name: Install python dependency
+  become: True
+  pip:
+     name: docker
