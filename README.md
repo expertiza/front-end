@@ -12,3 +12,14 @@
 8. Once the previous step is completed the changes will be reflected to everyone who uses Expertiza.
 
 ## Environment setup
+
+Please read the pre-requisites to make sure you have the required software and tools installed
+
+1. Clone the repository ```git clone https://github.com/expertiza/front-end.git```
+2. Download Node dependencies ```npm install```
+3. Run the server ```npm start```
+
+## Pre-requisites
+
+1. NodeJS 10x
+2. NPM 'serve' module *(optional if you want to host a production build of the application)*
