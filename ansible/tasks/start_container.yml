@@ -6,7 +6,7 @@
     ports:
       - 5000:3000
     links:
-      - "expertiza_blue"
+      - "expertiza_expertiza_blue_1"
     state: started
   when: deploy_env == "stable"
   ignore_errors: True
@@ -19,7 +19,7 @@
     ports:
       - 5001:3000
     links:
-      - "expertiza_blue"
+      - "expertiza_expertiza_blue_1"
     state: started
   when: deploy_env == "beta"
   ignore_errors: True
