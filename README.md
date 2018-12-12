@@ -44,8 +44,16 @@ If you want to setup your own integration and testing environment you can do so 
  * ANSIBLE_PLAYBOOK="ansible/playbooks/deploy.yml"
  * ANSIBLE_INVENTORY="ansible/inventory.ini"
  * ANSIBLE_HOST_KEY_CHECKING="False"
- * ANSIBLE_VAULT_PASS="<password_used_to_encrypt_inventory>"
+ * ANSIBLE_VAULT_PASS="<password_used_to_encrypt_ansible_inventory>"
  * IMAGE_NAME="<your_dockerhub_username>/front-end"
  * CI = "False"
  * REGISTRY_PASS (DockerHub user name)
  * REGISTRY_USER (DockerHub password)
+
+Also, you would need to setup ```ansible-vault``` and create a new inventory file and encrypt it.
+
+Inventory file format
+```
+[prod]
+XX.XX.XX.XX(This is IP address of you linux host) ansible_user="<user with su permission>" ansible_ssh_pass="<SSH password>" ansible_sudo_pass="<sudo password>"
+```
