@@ -21,5 +21,18 @@ Please read the pre-requisites to make sure you have the required software and t
 
 ## Pre-requisites
 
-1. NodeJS 10x
+1. NodeJS 10x *https://nodejs.org/en/download/*
 2. NPM 'serve' module *(optional if you want to host a production build of the application)*
+
+## Creating and Testing a Docker image
+
+Though it is not required for you to create a docker image of the application to contribute to the project, you can run the ```docker.sh``` script available at the root of the repository to create a docker image and push it onto your DockerHub repository.
+
+P.S: You need to have docker installed on your local machine for this to work and also you have to set the following environment variables
+
+ * REGISTRY_PASS
+ * REGISTRY_USER
+ * DEPLOY_ENV (can be any tag. E.g: stable, beta etc)
+ * IMAGE_NAME should be of the format <your_dockerhub_username/image_name>
+
+Conversely, we have created a docker image if you want to just test the existing service. You can pull and run the docker image from ```docker pull expertiza/front-end```
