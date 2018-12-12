@@ -24,7 +24,7 @@ Please read the pre-requisites to make sure you have the required software and t
 1. NodeJS 10x *https://nodejs.org/en/download/*
 2. NPM 'serve' module *(optional if you want to host a production build of the application)*
 
-## Creating and Testing a Docker image
+## Creating and Testing a Docker image (optional)
 
 Though it is not required for you to create a docker image of the application to contribute to the project, you can run the ```docker.sh``` script available at the root of the repository to create a docker image and push it onto your DockerHub repository.
 
@@ -36,3 +36,16 @@ P.S: You need to have docker installed on your local machine for this to work an
  * IMAGE_NAME should be of the format <your_dockerhub_username/image_name>
 
 Conversely, we have created a docker image if you want to just test the existing service. You can pull and run the docker image from ```docker pull expertiza/front-end```
+
+## Setting up your own Travis-CI environment (optional)
+
+If you want to setup your own integration and testing environment you can do so by enabling Travis-CI for your repository and adding the following environment variables in it.
+
+ * ANSIBLE_PLAYBOOK="ansible/playbooks/deploy.yml"
+ * ANSIBLE_INVENTORY="ansible/inventory.ini"
+ * ANSIBLE_HOST_KEY_CHECKING="False"
+ * ANSIBLE_VAULT_PASS="<password_used_to_encrypt_inventory>"
+ * IMAGE_NAME="<your_dockerhub_username>/front-end"
+ * CI = "False"
+ * REGISTRY_PASS (DockerHub user name)
+ * REGISTRY_USER (DockerHub password)
