@@ -4,7 +4,7 @@
     name: stable
     image: "{{ docker_repo }}:stable"
     ports:
-      - 5000:3000
+      - 5000:4000
     links:
       - "expertiza_expertiza_blue_1"
     state: started
@@ -17,7 +17,7 @@
     name: beta
     image: "{{ docker_repo }}:beta"
     ports:
-      - 5001:3000
+      - 5001:4000
     links:
       - "expertiza_expertiza_blue_1"
     state: started
