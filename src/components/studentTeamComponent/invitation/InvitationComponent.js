@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Aux from '../../../hoc/ReactAux/Aux'
+import Aux from '../../../hoc/ReactAux/ReactAux'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 import * as actions from '../../../redux/index'

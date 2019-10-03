@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import * as actions from '../../redux'
 import { NavLink } from 'react-router-dom';
 import TimelineComponent from './timeline/TimelineComponent'
-import Aux from '../../hoc/ReactAux/Aux'
+import Aux from '../../hoc/ReactAux/ReactAux'
 import { Loading } from '../UI/spinner/LoadingComponent';
 
 class StudentTaskView extends Component {

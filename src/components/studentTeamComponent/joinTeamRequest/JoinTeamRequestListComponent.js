@@ -1,6 +1,6 @@
 import React from 'react'
 import JoinTeamRequestHelper from './joinTeamRequestHelper/JoinTeamRequestHelper'
-import Aux from '../../../hoc/ReactAux/Aux'
+import Aux from '../../../hoc/ReactAux/ReactAux'
 import '../../../assets/stylesheets/goldberg.css'
 
 const joinTeamRequestListComponent = (props) => {
