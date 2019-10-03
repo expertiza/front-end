@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 
-import Aux from "../../hoc/ReactAux/Aux";
+import Aux from "../../hoc/ReactAux/ReactAux";
 import StudentTeamMemberComponent from "./studentTeamMember/studentTeamMemberComponent";
 import JoinTeamRequestListComponent from "./joinTeamRequest/JoinTeamRequestListComponent";
 import InvitationComponent from "./invitation/InvitationComponent";

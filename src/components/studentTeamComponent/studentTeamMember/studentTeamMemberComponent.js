@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Aux from '../../../hoc/ReactAux/Aux'
+import Aux from '../../../hoc/ReactAux/ReactAux'
 import axios from '../../../axios-instance';
 import {NavLink} from 'react-router-dom';
 import {Loading} from '../../UI/spinner/LoadingComponent'

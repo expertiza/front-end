@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../../hoc/ReactAux/Aux'
+import Aux from '../../../hoc/ReactAux/ReactAux'
 import './Modal.css';
 import BackDrop from '../BackDrop/BackDrop';
 
