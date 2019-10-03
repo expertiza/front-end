@@ -3,7 +3,7 @@ import {FormGroup, Radio} from 'react-bootstrap'
 import request from "superagent";
 import { connect } from 'react-redux'
 import ReactDropzone from 'react-dropzone'
-import Aux from '../../hoc/Aux/Aux'
+import Aux from '../../hoc/ReactAux/Aux'
 import { Loading } from '../UI/spinner/LoadingComponent';
 //import  from '../../redux/actions/StudentTeamView'
 import { SubmitURL } from '../../redux/actions/StudentUploadTask'
