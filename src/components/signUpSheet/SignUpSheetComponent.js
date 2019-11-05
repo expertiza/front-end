@@ -9,15 +9,15 @@ class SignUpSheetComponent extends Component {
 
     
     componentDidMount () {
-        console.log(this.props.match.params)
-        console.log(this.props.match.params.flag)
+        // console.log(this.props.match.params)
+        // console.log(this.props.match.params.flag)
         this.props.onSignUpSheetLoad(this.props.match.params.id, true);
-        console.log(this.props.loaded);
+        // console.log(this.props.loaded);
     }
 
     componentDidUpdate (prevProps) {
-        console.log("PrePropsmsg",prevProps.error_msg)
-        console.log("CurrProps", this.props.error_msg)
+        // console.log("PrePropsmsg",prevProps.error_msg)
+        // console.log("CurrProps", this.props.error_msg)
         if (this.props.error_msg != prevProps.error_msg){
             this.props.onSignUpSheetLoad(this.props.match.params.id, false);
         }
@@ -25,10 +25,10 @@ class SignUpSheetComponent extends Component {
 
 
     onSignUp (topic_id){
-        console.log(topic_id, this.props.assignment.id);
+        // console.log(topic_id, this.props.assignment.id);
 
         this.props.onSignUp(this.props.match.params.id, topic_id, this.props.assignment.id)
-        console.log("Return")
+        // console.log("Return")
     }
 
     onDelete (topic_id){

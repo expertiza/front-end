@@ -31,13 +31,13 @@ class StudentTeamComponent extends Component {
   }
 
   onTeamNameChangeHandler = e => {
-    console.log('key was pressed', e.target.value)
+    // console.log('key was pressed', e.target.value)
     this.setState({ team_name: e.target.value });
   };
 
   onTeamNameSubmitHandler = e => {
     e.preventDefault();
-    console.log("submit pressed");
+    // console.log("submit pressed");
     this.props.updateTeamName(this.props.student.id, this.state.team_name);
     this.setState({editNameModal: false, updateNameSuccess: true})
 
@@ -301,7 +301,7 @@ class StudentTeamComponent extends Component {
                 ) : null}
               </tr>
               {this.props.participants.map(member => {
-                console.log(member);
+                // console.log(member);
                 return (
                   <StudentTeamMemberComponent
                                 student_id = {this.props.student.id}

@@ -5,7 +5,7 @@ import '../../../assets/stylesheets/goldberg.css'
 
 const joinTeamRequestListComponent = (props) => {
     let output;
-    console.log('in Join team request list component value of join_team_requests',props.join_team_requests,Array.isArray(props.join_team_requests))
+    // console.log('in Join team request list component value of join_team_requests',props.join_team_requests,Array.isArray(props.join_team_requests))
     if( Array.isArray(props.join_team_requests) && props.join_team_requests.length !== 0 ) {
         output = 
             <div className="container-fluid">

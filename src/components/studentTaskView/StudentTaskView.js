@@ -9,7 +9,7 @@ import { Loading } from '../UI/spinner/LoadingComponent';
 class StudentTaskView extends Component {
 
     componentDidMount () {
-        console.log('id recieved is ;', this.props.match.params.id)
+        // console.log('id recieved is ;', this.props.match.params.id)
         this.props.onLoad(this.props.match.params.id);
     }
 

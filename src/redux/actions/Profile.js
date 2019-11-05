@@ -13,7 +13,7 @@ export const fetchProfile = () =>(dispatch) => {
 }
 
 export const fetchInstitutions = () =>(dispatch) => {
-    console.log('in fetchInstitutions')
+    // console.log('in fetchInstitutions')
     return axios({
         method: 'get',
         url: 'institution',

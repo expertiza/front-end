@@ -22,7 +22,7 @@ class SubmittedContentEditComponent extends Component {
 
     componentDidMount () {
         this.props.onSubmittedContentLoad(this.props.match.params.id);
-        console.log(this.props.loaded);
+        // console.log(this.props.loaded);
     }
 
 

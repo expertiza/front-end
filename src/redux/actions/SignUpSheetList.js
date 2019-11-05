@@ -4,8 +4,8 @@ import * as actions from '../index'
 export const onSignUpSheetLoad = (id,flag) => {
 
     return dispatch => {
-        console.log('id in actions is :', id)
-        console.log('flag', flag)
+        // console.log('id in actions is :', id)
+        // console.log('flag', flag)
         axios({
             method: 'post',
             url: 'sign_up_sheet/list',
@@ -22,7 +22,7 @@ export const onSignUpSheetLoad = (id,flag) => {
 
 export const onSignUp = (id, topic_id, assignment_id) => {
     return dispatch => {
-        console.log('id in actions is :', id, topic_id, assignment_id)
+        // console.log('id in actions is :', id, topic_id, assignment_id)
         axios({
             method: 'get',
             url: 'sign_up_sheet/sign_up',
@@ -39,7 +39,7 @@ export const onSignUp = (id, topic_id, assignment_id) => {
 
 export const onDelete = (id, topic_id, assignment_id) => {
     return dispatch => {
-        console.log('id in actions is :', id, topic_id, assignment_id)
+        // console.log('id in actions is :', id, topic_id, assignment_id)
         axios({
             method: 'get',
             url: 'sign_up_sheet/delete_signup',

@@ -39,8 +39,8 @@ class Login extends Component {
     }
   
     componentWillUnmount () {
-        console.log('in component will unmount')
-            this.props.history.push('/studentlist')
+        // console.log('in component will unmount')
+        this.props.history.push('/studentlist')
     }
 
     render (){

@@ -45,9 +45,9 @@ class StudentTaskUpload extends Component {
 
     submittedURL(event) {
         //alert('A name was submitted: ' + this.state.current_url);
-        console.log(this.state.current_url);
+        // console.log(this.state.current_url);
         this.props.SubmitURL(this.props.participant.id, this.state.current_url);
-        console.log("hehehehe")
+        // console.log("hehehehe")
         event.preventDefault();
       }
 

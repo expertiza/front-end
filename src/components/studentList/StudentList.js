@@ -19,8 +19,8 @@ class StudentList extends Component {
             hasTopics: this.props.hasTopics,
             hasBadges: this.props.hasBadges
         };
-        console.log(this.state.hasTopics)
-        console.log(this.state.teamCourse[0])
+        // console.log(this.state.hasTopics)
+        // console.log(this.state.teamCourse[0])
         if(this.state.taskrevisions== undefined){
 
         }

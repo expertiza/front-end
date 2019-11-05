@@ -8,12 +8,12 @@ const initialize={
     }
 
 const signUpSheetList = (state = initialize, action) => {
-    console.log("signUpList")
-    console.log(action.flag)
+    // console.log("signUpList")
+    // console.log(action.flag)
     switch(action.type){
         case actions.ADD_SIGNUPSHEETLIST:
             if(action.flag){
-                console.log("Initialize")
+                // console.log("Initialize")
                 return updateObject(state = initialize , {
                     loaded: true,
                     signupsheet: action.payload

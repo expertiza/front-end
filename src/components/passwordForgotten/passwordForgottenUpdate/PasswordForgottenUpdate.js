@@ -13,7 +13,7 @@ class PasswordForgottenUpdate extends Component {
     }
 
     componentDidMount () {
-        console.log(this.props.location.search)
+        // console.log(this.props.location.search)
         const queryStringObj = querystring.parse(this.props.location.search)
         const token = queryStringObj.token
         this.setState({token: token})

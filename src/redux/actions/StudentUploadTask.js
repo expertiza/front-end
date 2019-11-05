@@ -3,7 +3,7 @@ import * as actions from '../index'
 import { onLoad } from '../actions/StudentTaskView';
 
 export const SubmitURL = (id, submission) => (dispatch) => {
-    console.log("loda");
+    // console.log("loda");
     return axios ({
         method : 'post',
         url : 'submitted_content/submit_hyperlink?='+id,
